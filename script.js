@@ -19,9 +19,20 @@ function displayBreeds(breeds) {
     const breedCard = `
       <div class="card">
         <p class="id">ID: ${breed.id}</p>
-        <h3>${breed.attributes.name}</h3>
         <p class="type">Type: ${breed.type}</p>
-        <p>${breed.attributes.description || "No description available"}</p>
+        <h3 class="attributes">Name: ${breed.attributes.name}</h3>
+        <p class="attributes">Description: ${breed.attributes.description || "No description available"}</p>
+        <p class="attributes">Min life:${breed.attributes.life.min}</p>
+        <p class="attributes">Max life: ${breed.attributes.life.max}</p>
+        <p class="attributes">Min male weight: ${breed.attributes.male_weight.min}</p>
+        <p class="attributes">Max male weight: ${breed.attributes.male_weight.max}</p>
+        <p class="attributes">Min female weight: ${breed.attributes.female_weight.min}</p>
+        <p class="attributes">Max female weight: ${breed.attributes.female_weight.max}</p>
+        <p class="attributes">Hypoallergenic: ${breed.attributes.hypoallergenic}</p>
+        <p class="relationships">Group ID: ${breed.relationships.group.data.id}</p>
+        <p class="relationships">Group type: ${breed.relationships.group.data.type}</p>
+        
+        
       </div>
     `;
     
