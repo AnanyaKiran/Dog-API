@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Breeds</title>
+  <style>
+    /* Basic body styling */
+    body {
+      font-family: 'mono';
+      margin: 0;
+      padding: 0;
+      background-color: #000000;
+    }
+
+    /* Main container styling */
+    #main-cont {
+      max-width: 1400px;
+      margin: 10px auto;
+      padding: 30px;
+      background-color: rgb(210, 143, 81);
+      border-radius: 10px;
+     
+    }
+
+    h1 {
+      text-align: center;
+      color: #000000;
+      font-size: 50px;
+    
+    }
+
+    /* Card container styling */
+    .card-container {
+      display: block;
+    }
+
+    /* Card styling */
+    .card {
+      background-color: #eedfa5;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgb(0, 0, 0);
+      padding-bottom: 15px;
+      padding-top: 15px;
+      margin-bottom: 50px;
+      transition: box-shadow 0.3s;
+    }
+
+    .card:hover {
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Card content styling */
+    .card h3 {
+      font-size: 1.5em;
+      color: #49051b;
+      margin-bottom: 10px;
+      margin-left: 20px;
+      margin-right: 20px;
+
+    }
+
+    .card p {
+      font-size: 1.2em;
+      color: black;
+      line-height: 1.2;
+      margin-bottom: 10px;
+      margin-left: 20px;
+      margin-right: 20px;
+
+    }
+
+    .card .id {
+      font-weight: bold;
+      color: #1d1212;
+      margin-left: 20px;
+      margin-right: 20px;
+
+    }
+
+    .card .type {
+      font-style: italic;
+      color: #4d1111;
+      font-weight: bold;
+      margin-left: 20px;
+      margin-right: 20px;
+
+    }
+  </style>
+</head>
+<body>
+
+  <section id="main-cont">
+    <h1><strong>DOG BREEDS</strong></h1>
+    <div class="card-container" id="breed-cards">
+      <!-- Cards will be dynamically inserted here -->
+    </div>
+  </section>
+
+  <script src="script.js"></script> <!-- Link to JavaScript file -->
+</body>
+</html>
